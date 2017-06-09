@@ -1,0 +1,8 @@
+body{
+  width:100%;
+  background: url("../img/asanoha-400px.png");
+  /*https://www.toptal.com/designers/subtlepatterns/ */
+  background-attachment: fixed;
+  background-position: center 0;
+  background-repeat: repeat;
+};

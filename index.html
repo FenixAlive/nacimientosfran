@@ -5,9 +5,10 @@
 	<title>Nacimientos Fran</title>
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-  <header>
+  <header id="header">
     <nav class="navbar navbar-inverse navbar-static-top">
       <div class="container">
       <!-- encabezado del menu -->
@@ -23,23 +24,24 @@
       <!-- Elementos del menu -->
         <div id="btn-colapsar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="">Inicio</a></li>
+            <li><a class="active" href="">Inicio</a></li>
             <li>
-              <a class="dropdown-toggle" href="" data-toggle="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown">
                 Productos<span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
-                <li><a href="">producto 1</a></li>
-                <li><a href="">producto 2</a></li>
-                <li><a href="">producto 3</a></li>
-                <li><a href="">producto 4</a></li>
-                <li><a href="">producto 5</a></li>
-                <li><a href="">producto 6</a></li>
-                <li><a href="">producto 7</a></li>
-                <li><a href="">producto 8</a></li>
+                <li><a href="chiquito">Nacimiento Chiquito</a></li>
+                <li><a href="mini">Nacimiento Mini</a></li>
+                <li><a href="mini-especial">Nacimiento Mini Especial</a></li>
+                <li><a href="cisco">Nacimiento Cisco</a></li>
+                <li><a href="francis">Nacimiento Francis</a></li>
+                <li><a href="estrella">Nacimiento Estrella</a></li>
+                <li><a href="casita">Nacimiento Casita</a></li>
+                <li><a href="cometa">Nacimiento Cometa</a></li>
+                <li><a href="templo">Nacimiento Templo</a></li>
               </ul>
             </li>
-            <li><a href="">Contacto</a></li>
+            <li><a href="contacto">Contacto</a></li>
           </ul>
       <!--Busqueda-->
         <form class="navbar-form navbar-right" action="search">
@@ -52,18 +54,109 @@
       </div>
     </nav>
   </header>
-  <!--cuerpo-->
+  <!--main-->
+  <section class="main">
+    <div class="container">
 
-<img alt="" data-original="http://lorempixel.com/300/300/nature/1">
-<img alt="" data-original="http://lorempixel.com/300/300/nature/2">
-<img alt="" data-original="http://lorempixel.com/300/300/nature/3">
-<img alt="" data-original="http://lorempixel.com/300/300/nature/4">
-<img alt="" data-original="http://lorempixel.com/300/300/nature/5">
-<img alt="" data-original="http://lorempixel.com/300/300/nature/6">
-<img alt="" data-original="http://lorempixel.com/300/300/nature/7">
-<img alt="" data-original="http://lorempixel.com/300/300/nature/8">
-<img alt="" data-original="http://lorempixel.com/300/300/nature/9">
-<img alt="" data-original="http://lorempixel.com/300/300/nature/10">
+      <!--slideshow-->
+      <div class="row">
+        <div class="col-md-12">
+          <div id="slider" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#slider" data-slide-to="0" class="active"></li>
+              <li data-target="#slider" data-slide-to="1"></li>
+              <li data-target="#slider" data-slide-to="2"></li>
+              <li data-target="#slider" data-slide-to="3"></li>
+              <li data-target="#slider" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="item active"><img alt="" data-original="http://lorempixel.com/1200/400/abstract/1"></div>
+              <div class="item"><img alt="nacimientos artesanales" src="http://lorempixel.com/1200/400/abstract/2"></div>
+              <div class="item"><img alt="hechos a mano" src="http://lorempixel.com/1200/400/abstract/3"></div>
+              <div class="item"><img alt="de la mejor calidad" src="http://lorempixel.com/1200/400/people/4"></div>
+              <div class="item"><img alt="al mejor precio" src="http://lorempixel.com/1200/400/nature/5"></div>
+            </div>
+            <!--controles-->
+              <a href="#slider" class="left carousel-control" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"><span></span><span class="sr-only">anterior</span></a>
+          
+              <a href="#slider" class="right carousel-control" data-slide="next"><span class="glyphicon glyphicon-chevron-right"><span></span><span class="sr-only">siguiente</span></a>
+            </div>
+        </div>  
+      </div>
+
+      <!--galeria-->
+      <div class="row">
+        <div class="col-md-12">
+          <div class="page-header">
+            <h1 class="text-center">Productos</h1>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <a href="chiquito"><img alt="Nacimiento Chiquito" data-original="http://lorempixel.com/500/500/abstract/1"></a>
+            <span class="caption"><h3>Nacimiento Chiquito</h3><p>Adipisicing neque alias sed corrupti eaque. Earum dolorem corporis aliquid</p><p><a class="btn btn-info" href="chiquito">Mas información</a></p></span>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <a href="mini"><img alt="Nacimiento Mini" data-original="http://lorempixel.com/500/500/abstract/2"></a>
+            <span class="caption"><h3>Nacimiento Mini</h3><p>Adipisicing illo nesciunt minus ab aliquam Corporis reiciendis dolore eveniet.</p><p><a class="btn btn-info" href="mini">Mas información</a></p></span>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <a href="mini-espeial"><img alt="Nacimiento Mini Especial" data-original="http://lorempixel.com/500/500/abstract/3"></a>
+            <span class="caption"><h3>Nacimiento Mini Especial</h3><p>Elit deleniti assumenda nostrum nihil quam. Asperiores nam velit natus</p><p><a class="btn btn-info" href="mini-especial">Mas información</a></p></span>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <a href="cisco"><img alt="Nacimiento Cisco" data-original="http://lorempixel.com/500/500/abstract/4"></a>
+            <span class="caption"><h3>Nacimiento Cisco</h3><p>Lorem veniam deserunt dolor cum inventore maxime Tenetur error ea.</p><p><a class="btn btn-info" href="cisco">Mas información</a></p></span>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <a href="francis"><img alt="Nacimiento Francis" data-original="http://lorempixel.com/500/500/abstract/5"></a>
+            <span class="caption"><h3>Nacimiento Francis</h3><p>Lorem omnis magni iste ipsum dolor magni! Esse asperiores illo</p><p><a class="btn btn-info" href="francis">Mas información</a></p></span>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <a href="estrella"><img alt="Nacimiento Estrella" data-original="http://lorempixel.com/500/500/abstract/6"></a>
+            <span class="caption"><h3>Nacimiento Estrella</h3><p>Ipsum inventore iure nam quasi adipisicing asperiores. Officiis laudantium quia</p><p><a class="btn btn-info" href="estrella">Mas información</a></p></span>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <a href="casita"><img alt="Nacimiento Casita" data-original="http://lorempixel.com/500/500/abstract/7"></a>
+            <span class="caption"><h3>Nacimiento Casita</h3><p>Sit voluptates inventore doloribus ullam minima Voluptate nostrum corporis quos.</p><p><a class="btn btn-info" href="casita">Mas información</a></p></span>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <a href="cometa"><img alt="Nacimiento Cometa" data-original="http://lorempixel.com/500/500/abstract/8"></a>
+            <span class="caption"><h3>Nacimiento Cometa</h3><p>Adipisicing molestias molestiae laborum non doloribus! Ipsam repellat tempora reiciendis!</p><p><a class="btn btn-info" href="cometa">Mas información</a></p></span>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <a href="templo"><img alt="Nacimiento Templo" data-original="http://lorempixel.com/500/500/abstract/8"></a>
+            <span class="caption"><h3>Nacimiento Cometa</h3><p>Adipisicing molestias molestiae laborum non doloribus! Ipsam repellat tempora reiciendis!</p><p><a class="btn btn-info" href="templo">Mas información</a></p></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="col-md-12">
+        <hr>
+        <p class="pull-left"><a href="http://github.com/FenixAlive">FenixAlive</a></p>
+        <p class="pull-right"><a href="#header">Subir</a></p>
+      </div>
+    </div>
+  </footer>
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
